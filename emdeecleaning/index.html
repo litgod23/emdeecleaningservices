@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emdee Cleaning | Residential & Commercial Cleaning</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+  <!-- Header -->
+    <header id="main-header">
+      <div class="header-container">
+        
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+        <!-- Left Navigation -->
+        <div class="nav-left">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Calculator</a>
+          <a href="#">Our Services</a>
+        </div>
+
+        <!-- Center Logo -->
+        <div class="nav-center">
+          <img src="images/emdeelogo100.png" alt="CleanSpace Logo" />
+        </div>
+
+        <!-- Right Navigation and Icons -->
+        <div class="nav-right">
+          <a href="#">Projects</a>
+          <a href="#">Blog</a>
+          <a href="#">Shop</a>
+          <a href="#">Contact Us</a>
+          <div class="nav-icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+       <!-- Combined mobile nav container (hidden by default) -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Calculator</a>
+    <a href="#">Our Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Blog</a>
+    <a href="#">Shop</a>
+    <a href="#">Contact Us</a>
+  </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero">
+        <div class="slideshow-container">
+          <div
+            class="slide active"
+            style="background-image: url('images/cleanoffice.jpg')"
+          >
+            <div class="caption">
+              <h1>Professional Office Cleaning</h1>
+              <p>We bring shine to your workspace.</p>
+              <a href="#" class="cta-btn">Book Now</a>
+            </div>
+          </div>
+
+          <div
+            class="slide"
+            style="background-image: url('images/cleanbedroom.jpg')"
+          >
+            <div class="caption">
+              <h1>Spotless Bedrooms</h1>
+              <p>Sleep better in a cleaner room.</p>
+              <a href="#" class="cta-btn">Get a Quote</a>
+            </div>
+          </div>
+
+          <div
+            class="slide"
+            style="background-image: url('images/cleanlivingroom.jpg')"
+          >
+            <div class="caption">
+              <h1>Cozy, Clean Living Spaces</h1>
+              <p>Feel at home — fresh and tidy.</p>
+              <a href="#" class="cta-btn">View Services</a>
+            </div>
+          </div>
+
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+          <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-description">
+          Pave Cleaning Limited provides a variety of cleaning solutions to
+          customers in Accra. We have a reputation for excellent service! Choose
+          us to serve you best!
+        </p>
+        <div class="reasons">
+          <div class="reason">
+            <div class="icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="text">
+              <h3>SPARKLING CLEAN</h3>
+              <p>
+                We keep your home sparkling clean and germ-free. Our
+                disinfecting process kills 99% of common bacteria and viruses.
+              </p>
+            </div>
+          </div>
+
+          <div class="reason">
+            <div class="icon">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <div class="text">
+              <h3>BACKGROUND CHECKED</h3>
+              <p>
+                Our cleaners are background-checked and insured for your peace
+                of mind.
+              </p>
+            </div>
+          </div>
+
+          <div class="reason">
+            <div class="icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="text">
+              <h3>LEADING TECHNOLOGIES</h3>
+              <p>
+                We use safe products such as hospital-grade disinfectants,
+                particle filtered vacuums, and color-coded cleaning cloths to
+                reduce cross-contamination.
+              </p>
+            </div>
+          </div>
+
+          <div class="reason">
+            <div class="icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="text">
+              <h3>RELIABLE CREWS</h3>
+              <p>
+                Our reliable and stable crews understand your specific house and
+                office cleaning service needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta-btn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="important-section">
+      <div class="important-overlay">
+        <div class="container">
+          <h2>NOTHING IS MORE IMPORTANT</h2>
+
+          <div class="priorities">
+            <div
+              class="priority"
+              id="customers"
+              onclick="showContent('customers')"
+            >
+              <i class="fas fa-user-check"></i>
+              <h3>OUR CUSTOMERS</h3>
+            </div>
+            <div
+              class="priority"
+              id="environment"
+              onclick="showContent('environment')"
+            >
+              <i class="fas fa-leaf"></i>
+              <h3>THE ENVIRONMENT</h3>
+            </div>
+            <div
+              class="priority"
+              id="communication"
+              onclick="showContent('communication')"
+            >
+              <i class="fas fa-comments"></i>
+              <h3>COMMUNICATION</h3>
+            </div>
+          </div>
+          <div class="content" id="content-display">
+            <p>Click on any of the priorities above to learn more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="services">
+      <h2>Our Cleaning Services</h2>
+      <p>
+        Do you wish you had a consistently clean office or home? We will make it
+        happen by developing a cleaning routine that ensures that your
+        expectations are met!
+      </p>
+
+      <div class="service-carousel">
+        <div class="service-list">
+          <div class="service-item">
+            <i class="fas fa-building"></i>
+            <h3>Commercial Cleaning</h3>
+            <p>
+              We follow a structured cleaning plan to maintain your office
+              appropriately.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-home"></i>
+            <h3>House Cleaning</h3>
+            <p>
+              Complete apartment and house cleaning services by professional
+              cleaners.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-car"></i>
+            <h3>Carpet Cleaning</h3>
+            <p>Your carpets would be professionally cleaned and treated.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-window-maximize"></i>
+            <h3>Window Cleaning</h3>
+            <p>
+              The highest quality window cleaning service at a competitive
+              price.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-hammer"></i>
+            <h3>Post Construction Cleaning</h3>
+            <p>
+              Get rid of the dust left behind after construction or renovation.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>Move In – Out Service</h3>
+            <p>
+              We will leave the place you’re leaving look even better than it
+              did when you moved in.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-broom"></i>
+            <h3>Hard Surface Floor Care</h3>
+            <p>Our floor care plan keeps your floor looking sparkling clean!</p>
+          </div>
+
+          <div class="service-item">
+            <i class="fas fa-window-maximize"></i>
+            <!-- Note: fa-blinds is not a real Font Awesome icon; alternative used below -->
+            <h3>Window Blinds Cleaning</h3>
+            <p>
+              We clean your blinds professionally using the best cleaning method
+              for blinds.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <i class="fas fa-fire-extinguisher"></i>
+            <h3>Smoke & Water Damage Restoration</h3>
+            <p>
+              Smoke and water damage items can in many cases be restored. Let us
+              help!
+            </p>
+          </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="service-dots">
+          <span class="dot active" onclick="showServiceSlide(0)"></span>
+          <span class="dot" onclick="showServiceSlide(1)"></span>
+          <span class="dot" onclick="showServiceSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-company" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>ABOUT OUR COMPANY</h2>
+          <h3>Exceptional level of cleaning services.</h3>
+          <p>
+            <strong>Emdee Cleaning</strong> is a full-service cleaning provider
+            offering residential, commercial, and specialized cleaning services
+            across Ghana. Our core values are
+            <strong>Honesty, Integrity, Professionalism</strong>, and a
+            commitment to <strong>high-quality results</strong>.
+          </p>
+          <p>
+            At Emdee Cleaning, we focus on listening to our clients,
+            understanding their needs, and consistently delivering an
+            exceptional level of service that meets both residential and
+            commercial standards.
+          </p>
+          <a href="#services" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="milestone-section" id="milestones">
+      <div class="milestone-overlay">
+        <div class="milestone-container">
+          <div class="milestone">
+            <h2 class="count" data-target="240">0</h2>
+            <p>Residential Homes Cleaned</p>
+          </div>
+          <div class="milestone">
+            <h2 class="count" data-target="100">0</h2>
+            <p>Happy Customers</p>
+          </div>
+          <div class="milestone">
+            <h2 class="count" data-target="420">0</h2>
+            <p>Completed Projects</p>
+          </div>
+          <div class="milestone">
+            <h2 class="count" data-target="105">0</h2>
+            <p>Commercial Sites Cleaned</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+      <div class="calculator-container">
+        <h2>SIMPLE PLANS. SIMPLE PRICING</h2>
+        <p>
+          To assist with a high-level estimate of your house cleaning, you may
+          use the cost calculator to get a sense of the cleaning price. This
+          estimate doesn’t consider many other factors an actual estimate will
+          consider before arriving at the final cleaning price. Call us for your
+          free no-obligation cleaning estimate.
+        </p>
+      </div>
+    </section>
+<section class="calculator-section2" id="calculator2"></section>
+    <div class="calculator-container2">
+        <h3>See the cleaning service calculator</h3>
+        <a href="#cleaning-calculator" class="calculator-btn"
+          >Service Calculator</a
+        >
+      </div>
+ </section>
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+  <div class="testimonial-overlay">
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"Absolutely fantastic cleaning service! My house looks amazing."</p>
+        <span>- Sarah M.</span>
+      </div>
+      <div class="testimonial">
+        <p>"Very professional and efficient team. Highly recommend."</p>
+        <span>- David L.</span>
+      </div>
+      <div class="testimonial">
+        <p>"Reliable, friendly, and thorough. Couldn’t ask for better."</p>
+        <span>- Maria G.</span>
+      </div>
+    </div>
+    <div class="testimonial-controls">
+      <button class="prev-btn">❮</button>
+      <button class="next-btn">❯</button>
+    </div>
+  </div>
+</section>
+
+
+ <section class="contact-section">
+  <div class="contact-info">
+    <div>
+      <h3>CALL US TODAY</h3>
+      <p>+233 20 480 7887</p>
+    </div>
+    <div>
+      <h3>ADENTA, MADINA</h3>
+      <p>29 Nii Kodia Rd</p>
+    </div>
+    <div>
+      <h3>ESTIMATE YOUR COSTS</h3>
+      <a href="#calculator" class="calculator-link">Online Calculator</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Column 1: Newsletter -->
+    <div class="footer-column">
+      <h4>CLEANING TIPS AND NEWSLETTER</h4>
+      <p>
+        Kindly subscribe to our interesting cleaning tips, newsletter and periodic cleaning messages by signing-up below:
+      </p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Email address" required>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Column 2: Services -->
+    <div class="footer-column">
+      <h4>OUR SERVICES</h4>
+      <ul>
+        <li>Commercial Cleaning</li>
+        <li>House Cleaning</li>
+        <li>Window Blinds / Curtain Cleaning</li>
+        <li>Post Construction Cleaning</li>
+        <li>Hard Surface Floor Care</li>
+        <li>Carpet Cleaning</li>
+        <li>Window Cleaning</li>
+        <li>Smoke and Mold Damage Cleaning</li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Latest Posts -->
+    <div class="footer-column">
+      <h4>LATEST POSTS</h4>
+      <ul>
+        <li>Hello world!<br><small>January 15, 2019</small></li>
+        <li>Descale kettle, take out stickers and clean mold<br><small>September 2, 2017</small></li>
+        <li>Developing creativity takes practice, but you can do it!<br><small>August 18, 2017</small></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact Info -->
+    <div class="footer-column">
+      <h4>CONTACT INFO</h4>
+      <ul>
+        <li>29 Nii Kodia Rd, Adenta</li>
+        <li>+233 20 480 7887</li>
+        <li>admin@pavecleaning.com</li>
+        <li>Mon-Fri: 08.00 am - 05.00 pm</li>
+        <li>Saturday, Sunday: closed</li>
+      </ul>
+    </div>
+
+  </div>
+ <!-- Social Media Icons -->
+  <div class="footer-social">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <p class="footer-copy">&copy; 2025 Emdee Cleaning. All rights reserved.</p>
+</footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
