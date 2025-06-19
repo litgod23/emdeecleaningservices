@@ -68,3 +68,10 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+
+console.log("JS file loaded!");
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM loaded");
+});
+
