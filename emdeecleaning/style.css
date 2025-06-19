@@ -547,7 +547,7 @@ p {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../images/kitchen.jpg"); /* Replace with your image URL */
+  background-image: url("./images/kitchen.jpg"); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -821,7 +821,7 @@ p {
 
 .milestone-section {
   position: relative;
-  background-image: url("../images/cleanwindow.jpg"); /* Replace with your image */
+  background-image: url("./images/cleanwindow.jpg"); /* Replace with your image */
   background-size: cover;
   background-attachment: fixed; /* Parallax effect */
   background-position: center;
@@ -942,7 +942,7 @@ p {
 }
 
 .testimonials-section {
-  background-image: url("../images/cleanhouse.jpg"); /* replace with actual image path */
+  background-image: url("./images/cleanhouse.jpg"); /* replace with actual image path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
